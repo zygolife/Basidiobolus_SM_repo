@@ -1,0 +1,13 @@
+Label	Replicate	Date and Time	Document	Source	Scale	Scale Units	Scale Factor	Count	Area	Perimeter	Circularity	Height	Width
+BasMer	1	2019-10-15T15:51:36-07:00	All_raw.pdf	Selection	CM (282 pixel(s) = 10.0000 centimeters)	centimeters	28.2	1	9.427343	14.590886	0.556462	3.439716	3.758865
+BasMer	2	2019-10-15T15:51:44-07:00	All_raw.pdf	Selection	CM (282 pixel(s) = 10.0000 centimeters)	centimeters	28.2	1	11.902067	15.979643	0.585731	4.078014	4.29078
+BasMer	3	2019-10-15T15:51:49-07:00	All_raw.pdf	Selection	CM (282 pixel(s) = 10.0000 centimeters)	centimeters	28.2	1	9.241235	15.199807	0.502648	3.652482	3.475177
+Cladosp	1	2019-10-15T15:51:51-07:00	All_raw.pdf	Selection	CM (282 pixel(s) = 10.0000 centimeters)	centimeters	28.2	1	15.089784	18.770802	0.53818	4.539007	4.539007
+Cladosp	2	2019-10-15T15:51:59-07:00	All_raw.pdf	Selection	CM (282 pixel(s) = 10.0000 centimeters)	centimeters	28.2	1	7.412856	12.790242	0.569427	3.971631	3.049645
+Cladosp	3	2019-10-15T15:52:02-07:00	All_raw.pdf	Selection	CM (282 pixel(s) = 10.0000 centimeters)	centimeters	28.2	1	10.176802	17.403429	0.422232	4.113475	3.758865
+ConTrun	1	2019-10-15T15:52:16-07:00	All_raw.pdf	Selection	CM (282 pixel(s) = 10.0000 centimeters)	centimeters	28.2	1	3.143705	8.17736	0.59078	1.914894	2.198582
+ConTrun	2	2019-10-15T15:52:16-07:00	All_raw.pdf	Selection	CM (282 pixel(s) = 10.0000 centimeters)	centimeters	28.2	1	0	0	0	0	0
+ConTrun	3	2019-10-15T15:52:16-07:00	All_raw.pdf	Selection	CM (282 pixel(s) = 10.0000 centimeters)	centimeters	28.2	1	0	0	0	0	0
+Negative	1	2019-10-15T15:52:16-07:00	All_raw.pdf	Selection	CM (282 pixel(s) = 10.0000 centimeters)	centimeters	28.2	1	0	0	0	0	0
+Negative	2	2019-10-15T15:52:16-07:00	All_raw.pdf	Selection	CM (282 pixel(s) = 10.0000 centimeters)	centimeters	28.2	1	0	0	0	0	0
+Negative	3	2019-10-15T15:52:16-07:00	All_raw.pdf	Selection	CM (282 pixel(s) = 10.0000 centimeters)	centimeters	28.2	1	0	0	0	0	0

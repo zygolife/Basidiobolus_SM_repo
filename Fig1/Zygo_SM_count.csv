@@ -1,0 +1,70 @@
+JGI Identifier,Isolate/Species,Phylum,Order,Genome size (Mb),# gene models,SM,HYBRID,NRPS,NRPS-Like,PKS,PKS-Like,TC
+Gloin1,Rhizophagus irregularis DAOM 181602 v1.0,Glomeromycotina,Mucoromycota,91.083792,10868,7,0,1,0,0,1,5
+Rhiir2_1,Rhizophagus irregularis DAOM 197198 v2.0,Glomeromycotina,Mucoromycota,136.807476,11110,7,0,1,1,0,1,4
+RhiirA1_1,Rhizophagus irregularis A1 v1.0,Glomeromycotina,Mucoromycota,125.868962,11046,4,0,1,1,0,2,NA
+RhiirA4,Rhizophagus irregularis A4 v1.0,Glomeromycotina,Mucoromycota,138.301208,10848,3,0,1,0,0,2,NA
+RhiirA5,Rhizophagus irregularis A5 v1.0,Glomeromycotina,Mucoromycota,131.461109,10893,2,0,1,0,0,1,NA
+RhiirB3,Rhizophagus irregularis B3 v1.0,Glomeromycotina,Mucoromycota,124.893935,10707,3,0,1,0,0,2,NA
+RhiirC2,Rhizophagus irregularis C2 v1.0,Glomeromycotina,Mucoromycota,122.966682,10677,4,0,1,1,0,2,NA
+Lobtra1,Lobosporangium transversale NRRL 3116 v1.0,Morteriellomycotina,Mucoromycota,42.768949,7348,6,0,1,0,1,1,3
+Morel2,Mortierella elongata AG-77 v2.0,Morteriellomycotina,Mucoromycota,49.863165,9032,6,0,0,3,0,1,2
+Mormul1,Mortierella multidivaricata RSA 2152 T v1.0,Morteriellomycotina,Mucoromycota,37.665308,7462,7,0,0,3,1,1,2
+Morve1,Mortierella verticillata NRRL 6337,Morteriellomycotina,Mucoromycota,41.854149,8493,8,0,4,2,1,1,NA
+MorGBAus27b_1,Mortierella sp. GBAus27b,Morteriellomycotina,Mucoromycota,44.97,13953,21,0,3,13,1,1,3
+Absrep1,Absidia repens NRRL 1336 v1.0,Mucoromycotina,Mucoromycota,47.422896,8575,14,0,1,1,1,1,10
+Bacci1,Backusella circina FSU 941 v1.0,Mucoromycotina,Mucoromycota,48.648288,9250,16,0,1,5,2,1,7
+Blatri1,Blakeslea trispora NRRL 2456 v1.0,Mucoromycotina,Mucoromycota,37.513922,6062,12,0,1,3,1,1,6
+Chlpad1,Absidia padenii NRRL 2977 v1.0,Mucoromycotina,Mucoromycota,34.32823,7616,9,0,0,0,0,0,9
+Cirumb1,Circinella umbellata NRRL1351 v1.0,Mucoromycotina,Mucoromycota,51.2701,7773,12,0,0,4,1,1,6
+Cokrec1,Cokeromyces recurvatus NRRL 2243 v1.0,Mucoromycotina,Mucoromycota,28.120762,5928,13,0,1,2,2,1,7
+Cunech1,Cunninghamella echinulata NRRL 1382 v1.0,Mucoromycotina,Mucoromycota,29.00241,5915,10,0,1,0,1,1,7
+Dicele1,Dichotomocladium elegans RSA 919- v1.0,Mucoromycotina,Mucoromycota,39.77802,6567,8,0,0,1,1,1,5
+Fenlin1,Fennellomyces sp. T-0311 v1.0,Mucoromycotina,Mucoromycota,45.897337,7672,14,0,0,5,1,1,7
+Gilper1,Gilbertella persicaria var. persicaria CBS 190.32-T v1.0,Mucoromycotina,Mucoromycota,25.732466,6150,12,0,1,3,1,1,6
+Gonbut1,Gongronella butleri v1.0,Mucoromycotina,Mucoromycota,33.012461,6298,12,0,1,2,1,1,7
+Hesve2finisherSC,Hesseltinella vesiculosa NRRL3301 v2.0,Mucoromycotina,Mucoromycota,27.216191,6117,11,0,1,2,1,1,6
+Kircor1,Mucor cordense RSA 1222 v1.0,Mucoromycotina,Mucoromycota,40.953002,9104,22,0,1,7,2,1,11
+Liccor1,Lichtheimia corymbifera JMRC:FSU:9682,Mucoromycotina,Mucoromycota,33.525905,7358,13,0,0,5,1,1,6
+Lichy1,Lichtheimia hyalospora v1.0,Mucoromycotina,Mucoromycota,33.282407,6757,15,0,0,6,1,1,7
+Mucci2,Mucor circinelloides CBS277.49 v2.0,Mucoromycotina,Mucoromycota,36.6,11719,15,0,1,4,2,1,7
+Mycafr1,Mycotypha africana NRRL 2978 v1.0,Mucoromycotina,Mucoromycota,29.202882,5937,11,0,1,1,2,1,6
+Parpar1,Parasitella parasitica v1.0,Mucoromycotina,Mucoromycota,32.767132,6765,13,0,1,2,2,1,7
+Phaart1,Phascolomyces articulosus v1.0,Mucoromycotina,Mucoromycota,47.605836,7974,14,0,0,7,1,1,5
+Pilano1,Pilaira anomala RSA1997 v1.0,Mucoromycotina,Mucoromycota,34.898111,6925,13,0,1,3,1,1,7
+Pilumb1,Pilobolus umbonatus NRRL 6349 v1.0,Mucoromycotina,Mucoromycota,34.772712,5872,8,0,1,0,1,1,5
+Radspe1,Radiomyces spectabilis NRRL 2753 v1.0,Mucoromycotina,Mucoromycota,30.409402,6228,13,0,0,3,1,1,8
+Rhich1,Rhizopus microsporus var. chinensis CCTCC M201021,Mucoromycotina,Mucoromycota,45.739792,10264,22,0,2,6,1,2,11
+Rhimi_ATCC11559_1,Rhizopus microsporus ATCC11559 v1.0,Mucoromycotina,Mucoromycota,24.077254,5856,12,0,1,3,1,1,6
+Rhimi_ATCC52814_1,Rhizopus microsporus var. microsporus ATCC52814 v1.0,Mucoromycotina,Mucoromycota,24.950816,5849,13,0,1,3,1,1,7
+Rhimi1_1,Rhizopus microsporus var. microsporus ATCC52813 v1.0,Mucoromycotina,Mucoromycota,25.972395,5811,12,0,1,3,1,1,6
+Sakvas1,Saksenaea vasiformis B4078,Mucoromycotina,Mucoromycota,42.502389,5877,9,0,1,1,1,0,6
+Spifus1,Spinellus fusiger NRRL 22323 v1.0,Mucoromycotina,Mucoromycota,38.198483,5394,14,0,0,6,1,1,6
+Spoumb1,Sporodiniella umbellata MES 1446 v1.0,Mucoromycotina,Mucoromycota,26.235891,5768,15,0,1,6,1,1,6
+Zyghet1,Mucor heterogamus NRRL 1489 v1.0,Mucoromycotina,Mucoromycota,54.487678,14998,18,0,2,3,1,1,11
+Morhum1,Mortierella humilis PMI_1414,Mucoromycotina,Mucoromycota,36.2,12012,10,0,3,2,1,1,3
+Rhior3,Rhizopus delemar 99-880 from Broad,Mucoromycotina,Mucoromycota,46.1,17467,10,0,1,6,1,1,1
+Phybl2,Phycomyces blakesleeanus NRRL1555 v2.0,Mucoromycotina,Mucoromycota,53.9,16528,12,0,1,2,1,1,7
+Umbra1,Umbelopsis ramanniana AG # v1.0,Mucoromycotina,Mucoromycota,23.08,9931,12,0,1,4,0,1,6
+Coemoj1,Coemansia mojavensis RSA 71 v1.0,Mucoromycotina,Mucoromycota,14.29,6859,11,0,1,0,6,1,3
+Synrac1,Syncephalastrum racemosum:13706,Mucoromycotina,Mucoromycota,30.75,11124,15,0,0,7,1,1,6
+Basme2finSC,Basidiobolus meristosporus JGI,Entomophthoromycotina,Zoopagomycota,89.48906,16111,43,1,19,9,3,1,10
+Conco1,Conidiobolus coronatus NRRL28638 v1.0,Entomophthoromycotina,Zoopagomycota,39.903661,4790,13,0,1,7,0,3,2
+Conth1,Conidiobolus thromboides FSU 785 v1.0,Entomophthoromycotina,Zoopagomycota,24.635576,4266,8,0,0,4,1,1,2
+N161,Basidiobolus meristosporus B9252,Entomophthoromycotina,Zoopagomycota,103.9,13273,40,0,13,14,2,5,6
+N168,Basidiobolus heterosporus,Entomophthoromycotina,Zoopagomycota,47.63,9331,23,0,10,8,1,0,4
+Coere1,Coemansia reversa NRRL 1564 v1.0,Kickxellomycotina,Zoopagomycota,21.838014,4069,11,0,1,0,6,2,2
+Coespi1,Coemansia spiralis RSA 1278 v1.0,Kickxellomycotina,Zoopagomycota,18.931979,4298,15,0,1,0,11,1,2
+DimcrSC1,Dimargaris cristalligena RSA 468 single-cell v1.0,Kickxellomycotina,Zoopagomycota,30.776575,3721,33,0,21,7,0,2,3
+Kicala1,Kickxella alabastrina RSA 675 v1.0,Kickxellomycotina,Zoopagomycota,22.263034,4190,7,0,0,1,2,2,2
+Linpe1,Linderina pennispora ATCC 12442 v1.0,Kickxellomycotina,Zoopagomycota,26.202545,4785,23,0,1,0,15,3,4
+Marpt1,Martensiomyces pterosporus CBS 209.56 v1.0,Kickxellomycotina,Zoopagomycota,19.815802,4577,23,0,1,0,5,14,3
+Rambr1,Ramicandelaber brevisporus CBS 109374 v1.0,Kickxellomycotina,Zoopagomycota,25.531049,5177,5,0,0,1,1,1,2
+SmiculW2_1,Smittium culicis ID-206-W2,Kickxellomycotina,Zoopagomycota,71.049901,5686,4,0,0,1,2,1,NA
+SmicuMNP_2,Smittium culicis GSMNP,Kickxellomycotina,Zoopagomycota,77.124806,6440,4,0,0,1,2,1,NA
+Smimuc2,Smittium mucronatum ALG-7-W6,Kickxellomycotina,Zoopagomycota,102.350667,4347,5,0,0,1,3,1,NA
+Zancul2,Zancudomyces culisetae COL-18-3,Kickxellomycotina,Zoopagomycota,28.637897,4222,5,0,0,1,0,3,1
+Pipcy3_1,Piptocephalis cylindrospora RSA 2659 single-cell v3.0,Zoopagomycotina,Zoopagomycota,10.748607,2143,3,0,0,0,0,1,2
+Synfus1,Syncephalis fuscata S228 v1.0,Zoopagomycotina,Zoopagomycota,29.358178,4726,5,0,1,0,0,1,3
+Synplu1,Syncephalis plumigaleata NRRL S24 v1.0,Zoopagomycotina,Zoopagomycota,32.907727,8130,4,0,1,0,0,1,2
+Synps1,Syncephalis pseudoplumigaleata Benny S71-1 single-cell v1.0,Zoopagomycotina,Zoopagomycota,16.269185,2941,6,0,1,0,0,1,4
+Thasp1,Thamnocephalis sphaerospora RSA 1356 single-cell v1.0,Zoopagomycotina,Zoopagomycota,18.203817,3697,4,0,0,1,0,1,2
