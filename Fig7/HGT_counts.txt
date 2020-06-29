@@ -1,23 +1,23 @@
-Origin	bashet	basmer_B9252	basmer_HGT
-a-proteobacteria	21	33	26
-actinobacteria	1	4	1
+NCBI taxonomy	B. meristosporus CBS 931.73	B.meristosporus B9252	B. heterosporus B8290
+a-proteobacteria	49	27	18
+b-proteobacteria	39	29	15
+d-proteobacteria	55	32	15
+e-proteobacteria	6	NA	NA
+g-proteobacteria	81	46	20
+proteobacteria	2	1	1
+firmicutes	112	68	35
+actinobacteria	2	1	NA
+high GC Gram+	125	52	25
+enterobacteria	13	10	1
+planctomycetes	17	6	2
+CFB group bacteria	79	56	24
+bacteriodetes	91	27	9
+verrucomicrobia	10	7	5
+fusobacteria	NA	NA	1
+cyanobacteria	89	44	31
+chlamydias	NA	NA	1
+mycoplasmas	1	NA	1
 aquificales	1	NA	1
+bacteria	27	15	3
+euryarchaeotes	6	4	3
 archaea	1	1	1
-b-proteobacteria	21	31	24
-bacteria	6	21	16
-CFB group bacteria	33	60	36
-chlamydias	1	NA	NA
-cyanobacteria	42	51	39
-d-proteobacteria	23	40	39
-e-proteobacteria	2	1	4
-enterobacteria	2	10	8
-euryarchaeotes	4	4	3
-firmicutes	54	87	54
-fusobacteria	2	NA	NA
-g-proteobacteria	27	54	50
-GNS bacteria	12	28	51
-high GC Gram+	39	63	68
-mycoplasmas	1	NA	NA
-planctomycetes	2	6	15
-proteobacteria	1	1	2
-verrucomicrobia	5	8	4
