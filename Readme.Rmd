@@ -124,7 +124,9 @@ zygo.all.m <- melt(zygo.all, id.vars = c("JGI.Identifier","Isolate.Species","Ord
 zygo.all.m$gene_fam <- "Secondary_Metabolyte"
 zygo.all.m$gene_fam[zygo.all.m$variable %in% c("Genome.size..Mb.")] <- "Genome_size"
 zygo.all.m$gene_fam[zygo.all.m$variable %in% c("X..gene.models")] <- "Number_of_genes"
-zygo.all.m$gene_fam [zygo.all.m$variable %in% c("SM_normalized")] <- "Proportion of SM per total genes"
+zygo.all.m$gene_fam[zygo.all.m$variable %in% c("SM_normalized")] <- "Proportion of SM per total genes"
+zygo.all.m$gene_fam[zygo.all.m$variable %in% c("SM")] <- NA
+zygo.all.m <- zygo.all.m[!is.na(zygo.all.m$gene_fam),]
 
 # Plot
 ggplot(zygo.all.m) + geom_bar(aes(x=Isolate.Species, y=value, fill=variable), stat="identity") + 
@@ -133,6 +135,8 @@ ggplot(zygo.all.m) + geom_bar(aes(x=Isolate.Species, y=value, fill=variable), st
   theme_classic() + 
   theme(axis.text.x = element_text(angle = 90, hjust = 1))
 ```
+
+Colors were modified in Illustrator to increase contrast between gene families
 
 
 ## Figure 2. RNA expression
