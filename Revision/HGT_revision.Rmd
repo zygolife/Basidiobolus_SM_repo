@@ -1,0 +1,209 @@
+---
+title: "R Notebook"
+output: html_notebook
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r}
+library(tidyverse)
+library(seqinr)
+```
+
+
+```{r}
+name.sp <- c("BasHet", "BasMer_9252", "BasMer_JGI")
+GFF_file_list <- c("Bas_het/Complete_ann/B8920.annotation.final.gff3","Bas_mer_B9252/B9252.annotation.final.gff3.gz","Bas_mer/Basme2finSC_GeneCatalog_2015_06_30_09_37_deflines.gff3")
+
+GFF_files <- lapply(GFF_file_list, read_delim, delim = "\t", comment = "#", col_names = c("Chromosome","Source","Feature","Start","End","Score","Strand","Frame","Attribute"))
+
+lapply(GFF_files, function (x) x %>% head)
+
+GFF_files[[1]] <- GFF_files[[1]][GFF_files[[1]]$Feature %in% "mRNA",]
+GFF_files[[2]] <- GFF_files[[2]][GFF_files[[2]]$Feature %in% "mRNA",]
+GFF_files[[3]] <- GFF_files[[3]][GFF_files[[3]]$Feature %in% "mRNA",]
+
+GFF_files[[1]]$Gene <- strsplit(GFF_files[[1]]$Attribute, split = ";") %>% lapply(function (x) x[3]) %>% unlist %>% gsub(pattern = "locus_tag=", replacement = "")
+GFF_files[[2]]$Gene <- strsplit(GFF_files[[2]]$Attribute, split = ";") %>% lapply(function (x) x[1]) %>% unlist %>% gsub(pattern = "ID=", replacement = "")
+GFF_files[[3]]$Gene <- strsplit(GFF_files[[3]]$Attribute, split = ";") %>% lapply(function (x) x[2]) %>% unlist %>% gsub(pattern = "Name=", replacement = "") %>% strsplit(split = "|", fixed = T) %>% lapply(function (x) x[3]) %>% unlist
+
+lapply(GFF_files, function (x) x$Gene %>% head)
+
+# HGT candidates
+HGT_candidates <- readRDS(file = "HGT/HGT_final.Rds")
+HGT_candidates[[1]]$Gene <- strsplit(HGT_candidates[[1]]$Attribute, split = ";") %>% lapply(function (x) x[3]) %>% unlist %>% gsub(pattern = "locus_tag=", replacement = "")
+HGT_candidates[[2]]$Gene <- strsplit(HGT_candidates[[2]]$Attribute, split = ";") %>% lapply(function (x) x[1]) %>% unlist %>% gsub(pattern = "ID=", replacement = "")
+HGT_candidates[[3]]$Gene <- strsplit(HGT_candidates[[3]]$Attribute, split = ";") %>% lapply(function (x) x[2]) %>% unlist %>% gsub(pattern = "Name=", replacement = "") %>% strsplit(split = "|", fixed = T) %>% lapply(function (x) x[3]) %>% unlist
+
+lapply(HGT_candidates, function (x) x %>% head)
+#HGT_candidates[[2]]$Gene <- HGT_candidates[[2]]$Gene %>% gsub(pattern = "N161|", replacement = "", fixed = T)
+#HGT_candidates[[3]] <- HGT_candidates[[3]] %>% strsplit(split = "|", fixed = T) %>% lapply(function (x) x[3]) %>% unlist
+lapply(GFF_files, function (x) x$Gene %>% head)
+
+
+# Combining
+GFF_files <- lapply(c(1:3), function (x){
+  GFF_files[[x]]$HGT <- "Fungal"
+  GFF_files[[x]]$HGT[GFF_files[[x]]$Gene %in% HGT_candidates[[x]]$Gene] <- "HGT"
+  GFF_files[[x]]
+})
+
+lapply(GFF_files, function (x) x$HGT %>% table)
+```
+
+## Separating by chromosomes:
+
+### Chromosomes with HGT genes
+
+#### N168
+```{r}
+hgt.chrom <- GFF_files[[1]][GFF_files[[1]]$Gene %in% HGT_candidates[[1]]$Gene,1] %>% unique %>% unlist %>% unname
+N168.chrom <- lapply(hgt.chrom, function (x) {
+  chrom <- GFF_files[[1]][GFF_files[[1]]$Chromosome %in% x,]
+  hgt.loc <- c(grep(pattern="HGT", x = chrom$HGT) - 1 , grep(pattern="HGT", x = chrom$HGT), grep(pattern="HGT", x = chrom$HGT) + 1)
+  #hgt.loc <- c(min(hgt.loc), max(hgt.loc))
+  chrom[hgt.loc,]  %>% na.omit
+})
+
+N168.no_fung <- N168.chrom[lapply(N168.chrom, nrow) == 1] %>% bind_rows()
+```
+
+#### N161
+```{r}
+hgt.chrom <- GFF_files[[2]][GFF_files[[2]]$Gene %in% HGT_candidates[[2]]$Gene,1] %>% unique %>% unlist %>% unname
+N161.chrom <- lapply(hgt.chrom, function (x) {
+  chrom <- GFF_files[[2]][GFF_files[[2]]$Chromosome %in% x,]
+  hgt.loc <- c(grep(pattern="HGT", x = chrom$HGT) - 1 , grep(pattern="HGT", x = chrom$HGT), grep(pattern="HGT", x = chrom$HGT) + 1)
+  #hgt.loc <- c(min(hgt.loc), max(hgt.loc))
+  chrom[hgt.loc,]  %>% na.omit
+})
+
+N161.no_fung <- N161.chrom[lapply(N161.chrom, nrow) == 1] %>% bind_rows()
+```
+
+#### BasMer
+```{r}
+hgt.chrom <- GFF_files[[3]][GFF_files[[3]]$Gene %in% HGT_candidates[[3]]$Gene,1] %>% unique %>% unlist %>% unname
+BasMer.chrom <- lapply(hgt.chrom, function (x) {
+  chrom <- GFF_files[[3]][GFF_files[[3]]$Chromosome %in% x,]
+  hgt.loc <- c(grep(pattern="HGT", x = chrom$HGT) - 1 , grep(pattern="HGT", x = chrom$HGT), grep(pattern="HGT", x = chrom$HGT) + 1)
+  #hgt.loc <- c(min(hgt.loc), max(hgt.loc))
+  chrom[hgt.loc,]  %>% na.omit
+})
+
+BasMer.no_fung <- BasMer.chrom[lapply(BasMer.chrom, nrow) == 1] %>% bind_rows()
+```
+
+## GC content test
+
+```{r}
+BasMer.chrom$transcript <- BasMer.chrom$Attribute %>% strsplit(split = ";") %>% lapply(function (x) x[6]) %>% unlist %>% gsub(pattern = "transcriptId=", replacement = "")
+
+## FASTA
+BasMer.nuc <- read.fasta("Bas_mer/Basme2finSC_GeneCatalog_transcripts_20150701.nt.fasta.gz")
+fasta.prot <- getName(BasMer.nuc) %>% strsplit(split = "|", fixed = T) %>% lapply(function (x) x[3]) %>% unlist 
+
+### Surrounding genes
+BasMer.surrounding <- BasMer.nuc[fasta.prot %in% BasMer.chrom$transcript]
+
+### HGT candidates
+HGT_candidates[[3]]$transcript <- HGT_candidates[[3]]$Attribute %>% strsplit(split = ";") %>% lapply(function (x) x[6]) %>% unlist %>% gsub(pattern = "transcriptId=", replacement = "")
+BasMer.HGT <- BasMer.nuc[fasta.prot %in% HGT_candidates[[3]]$transcript]
+
+### Fungal genes
+BasMer.Fungal <-  GFF_files[[3]][!GFF_files[[3]]$Gene %in% BasMer.chrom$Gene,]
+BasMer.Fungal$transcript <- BasMer.Fungal$Attribute %>% strsplit(split = ";") %>% lapply(function (x) x[6]) %>% unlist %>% gsub(pattern = "transcriptId=", replacement = "")
+BasMer.Fungal.nuc <- BasMer.nuc[fasta.prot %in% BasMer.Fungal$transcript]
+
+GC.surr <- data.frame("Source"="Surrounding", "GC"=lapply(BasMer.surrounding, GC) %>% unlist %>% unname)
+GC.HGT <- data.frame("Source"="HGT", "GC"=lapply(BasMer.HGT, GC) %>% unlist %>% unname)
+GC.nuc <- data.frame("Source"="Fungal", "GC"=lapply(BasMer.Fungal.nuc, GC) %>% unlist %>% unname)
+
+GC.all <- bind_rows(GC.surr, GC.HGT) %>% bind_rows(GC.nuc)
+
+aov.all <- aov(lm(data = GC.all, GC~Source))
+TukeyHSD(aov.all)
+```
+
+## New taxonomy plot
+
+```{r}
+list.no_fung <- list(N168.no_fung, N161.no_fung, BasMer.no_fung)
+
+HGT_candidates.bact <- lapply(c(1:3), function (x){
+  HGT_candidates.bact <- HGT_candidates[[x]][!HGT_candidates[[x]]$Gene %in% list.no_fung[[x]]$Gene,]
+  HGT_candidates.bact <- tibble(table(HGT_candidates.bact$Taxa) %>% sort(decreasing = T) %>% as.data.frame, "Species" = names(HGT_candidates)[x])
+  HGT_candidates.bact$Var1 <- factor(HGT_candidates.bact$Var1, levels = c("a-proteobacteria","b-proteobacteria","d-proteobacteria","e-proteobacteria","g-proteobacteria","proteobacteria","firmicutes","actinobacteria","high GC Gram+","enterobacteria","planctomycetes","CFB group bacteria","GNS bacteria","verrucomicrobia","fusobacteria","cyanobacteria","chlamydias","mycoplasmas","aquificales","bacteria","euryarchaeotes","archaea"))
+  HGT_candidates.bact
+})
+
+HGT.count <- merge(HGT_candidates.bact[[1]], HGT_candidates.bact[[2]], by = "Var1", all = T) %>% merge(HGT_candidates.bact[[3]], by = "Var1", all = T)
+
+HGT.count <- HGT.count[,c(1,2,4,6)]
+clipr::write_clip(HGT.count)
+
+ggplot(HGT_candidates.bact %>% bind_rows(), aes(x=Species,y=Freq,fill=Var1)) + geom_bar(stat='identity', position = 'fill') + scale_fill_manual(values = c("#FFAAAA","#E37B7B","#D46A6A","#801515","#550000","#2B0000","#ED8229","#03D5D5","#198E8E","#674A33","#E9038F","#FFFF04","#ED5DBA","#72335B","#7F0855","#08AF13","#AA5704","#73239F","#1CA06E","#221617","#736058","#4E4E4E")) + theme_bw() + xlab("Taxon") + ylab("Proportion of genes with HGT evidence") + theme_classic() + scale_y_continuous(labels = scales::percent)
+
+# HGT abd SM
+HGT_candidates.bact.sm <- HGT_candidates.bact %>% bind_rows()
+
+HGT_candidates.bact.sm <- lapply(c(1:3), function (x){
+  HGT_candidates.bact.sm <- HGT_candidates[[x]][!HGT_candidates[[x]]$Attribute %in% list.no_fung[[x]]$Attribute,]
+})
+
+table(HGT_candidates.bact.sm[[1]]$SM)
+table(HGT_candidates.bact.sm[[2]]$SM)
+
+HGT_candidates.bact.sm[[2]][!is.na(HGT_candidates.bact.sm[[2]]$SM),]$Gene
+
+HGT_candidates.bact.sm[[3]]
+
+```
+
+
+## Interpro
+```{r}
+
+## Reading InterPro Annotations
+IPR <- read.delim("Bas_mer/Basme2finSC_GeneCatalog_proteins_20150701_IPR.tab.gz", sep = "\t", fill = T, comment.char = '', stringsAsFactors = F)
+
+## reading InterPro to GO annotations
+IPR_GO <- read.table("~/Documents/P_rubi/Genomes/Final_Calls/gene_calls_final/InterproToGO.txt", header= F, fill=T, sep="\t", stringsAsFactors = F)
+IPR_GO <- IPR_GO[!duplicated(IPR_GO$V1),]
+colnames(IPR_GO)[1] <- "iprId"
+
+## Extracting IPR identifier from proteins with HGT evidence (That are not SM)
+IPR.genes <- IPR[IPR$X.proteinId %in% HGT_candidates.bact.sm[[3]]$Gene,]
+length(unique(IPR.genes$X.proteinId))
+# 671
+# Not annotated: 140 proteins
+
+## IPR to GO
+IPR_GO.merge <- merge(IPR.genes, IPR_GO, by = "iprId", all = T)
+IPR_GO.merge <- IPR_GO.merge[c(1,2,13,14)]
+colnames(IPR_GO.merge) <- c("iprID","Gene","GOTerm","GOId")
+
+## Merging with genes
+BM_go <- merge(HGT_candidates.bact.sm[[3]],IPR_GO.merge, by = "Gene", all.x = T)
+BM_go.noSM <- BM_go[is.na(BM_go$SM),]
+go.summary <- data.frame(table(BM_go.noSM$GOTerm), stringsAsFactors = F)
+BM_go.SM <- BM_go[!is.na(BM_go$SM),]
+BM_go.SM <- BM_go.SM[!duplicated(BM_go.SM$Gene),]
+sm.summary <- data.frame(table(BM_go.SM$SM), stringsAsFactors = F)
+
+go_all <- rbind(go.summary, sm.summary)
+go_all <- go_all[order(go_all$Freq, decreasing = T),]
+go_all$Var1 <- as.character(go_all$Var1)
+# 659 proteins no GO
+go_all <- rbind(c("No GO", 659), c("No InterPro",140), go_all)
+colnames(go_all) <- c("GO_Term","Freq")
+go_all$GO <- "GO"
+go_all$GO[grep(go_all$GO_Term, pattern = "GO:", invert = T)] <- "SM"
+go_all$GO[grep(go_all$GO_Term, pattern = "No ", invert = F)] <- "NA"
+go_all$GO_Term <- factor(go_all$GO_Term, levels = go_all$GO_Term)
+go_all$Freq <- as.numeric(go_all$Freq)
+rownames(go_all) <- NULL
+
+library(tidyverse)
+ggplot(go_all, aes(y=Freq, x=GO_Term, fill=GO)) + geom_bar(stat="identity") + theme_bw() +  coord_flip()
+```
