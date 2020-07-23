@@ -55,19 +55,19 @@ Most files are in `Rmd` format. This is both to create small, binary files to be
   - `Bushley_names.txt`: Data frame of names from the NRPS reconstruction of [Bushley and Turgeon, 2010](https://www.ncbi.nlm.nih.gov/pubmed/20100353). Includes names of NRPS A-domains, Simplified names for NRPS A-domains and sub-family assignments.
   - `NRPS.tre`: Phylogenetic tree in NEWICK format from maximum likelihood reconstruction in RAxML using the predicted NRPS A-domains. Bootstrap supports from 1000 replicates are included as `node.labels`
   
-* `SF3/` (PKS KS domain phylogenetic tree)
+* `SF4/` (PKS KS domain phylogenetic tree)
   - `PKS.tre`: Phylogenetic tree in NEWICK format from maximum likelihood reconstruction in RAxML using the predicted PKS KS domains. Bootstrap supports from 1000 replicates are included as `node.labels` 
   
-* `SF4/` (Summary of PKS domains in fungal species)
+* `SF5/` (Summary of PKS domains in fungal species)
   - `PKS_Fungi.Rds`: Rds file with PKS domain counts for all fungal species included in the manuscript.
   
-* `SF5/` (Summary of PKS domains in zygomycetes species)
+* `SF6/` (Summary of PKS domains in zygomycetes species)
   - `PKS_counts.txt`: Data frame with PKS domain counts for 69 zygomycete species included in the manuscript.
 
-* `SF6/` (TC phylogenetic tree)
+* `SF7/` (TC phylogenetic tree)
   - `TC.tre`: Phylogenetic tree in NEWICK format from maximum likelihood reconstruction in RAxML using the predicted TC core genes. Bootstrap supports from 1000 replicates are included as `node.labels` 
   
-* `SF7/` (HGT assay figures)
+* `SF8/` (HGT assay figures)
   - `GFF_chrom.jcf7180000797043.Rds`: Rds file with GFF from scaffold jcf7180000797043 from *Basidiobolus heterosporus*.
   - `GFF_chrom.jcf7180000803233.Rds`: Rds file with GFF from scaffold jcf7180000803233 from *Basidiobolus heterosporus*.
   - `jcf7180000797043_HGTplot.rds`: Rds file/Data frame with HGT assignments and coverage for gene models harbored in scaffold jcf7180000797043 of *Basidiobolus heterosporus*
@@ -75,13 +75,13 @@ Most files are in `Rmd` format. This is both to create small, binary files to be
   - `jcf7180000797043_Zscores.Rds`: Rds file/Data frame with Z-scores for each position of scaffold jcf7180000797043 of *Basidiobolus heterosporus*
   - `jcf7180000803233_Zscores.Rds`: Rds file/Data frame with Z-scores for each position of scaffold jcf7180000803233 of *Basidiobolus heterosporus*
 
-* `SF8/` (Intron number in HGT and fungal genes)
+* `SF9/` (Intron number in HGT and fungal genes)
   - `intron_number.Rds`: Data frame with Pnumber of introns from genes in *Basidiobolus meristosporus CBS 931.37* classified as product of HGT.
 
-* `SF9/` (5-mer assay in HGT and fungal genes)
+* `SF10/` (5-mer assay in HGT and fungal genes)
   - `pentameres_simple.Rds`: Rds file/data frame with the two main principal components for the 5-mer assay of *Basidiobolus meristosporus CBS 931.37*.
   
-* `SF10/` (Codon usage assay in HGT and fungal genes)
+* `SF11/` (Codon usage assay in HGT and fungal genes)
   - `pentameres_simple.Rds`: Rds file/data frame with the two main principal components for the codon usage assay of *Basidiobolus meristosporus CBS 931.37*.
   
 ## Additional files:
@@ -98,7 +98,7 @@ Most files are in `Rmd` format. This is both to create small, binary files to be
 
 # Required packages
 
-```
+```{r}
 library(ggplot2)
 library(ggrepel)
 library(ggpubr)
@@ -124,19 +124,17 @@ zygo.all.m <- melt(zygo.all, id.vars = c("JGI.Identifier","Isolate.Species","Ord
 zygo.all.m$gene_fam <- "Secondary_Metabolyte"
 zygo.all.m$gene_fam[zygo.all.m$variable %in% c("Genome.size..Mb.")] <- "Genome_size"
 zygo.all.m$gene_fam[zygo.all.m$variable %in% c("X..gene.models")] <- "Number_of_genes"
+zygo.all.m$gene_fam[zygo.all.m$variable %in% c("SM")] <- 
+"Secondary_Metabolyte_raw"
 zygo.all.m$gene_fam[zygo.all.m$variable %in% c("SM_normalized")] <- "Proportion of SM per total genes"
-zygo.all.m$gene_fam[zygo.all.m$variable %in% c("SM")] <- NA
-zygo.all.m <- zygo.all.m[!is.na(zygo.all.m$gene_fam),]
 
 # Plot
-ggplot(zygo.all.m) + geom_bar(aes(x=Isolate.Species, y=value, fill=variable), stat="identity") + 
+ggplot(zygo.all.m[!zygo.all.m$gene_fam %in% c("Secondary_Metabolyte_raw"),]) + geom_bar(aes(x=Isolate.Species, y=value, fill=variable), stat="identity") + 
   facet_grid(gene_fam ~ Order + Phylum, scales = "free", space = "free_x") + 
   scale_fill_viridis_d() + 
   theme_classic() + 
   theme(axis.text.x = element_text(angle = 90, hjust = 1))
 ```
-
-Colors were modified in Illustrator to increase contrast between gene families
 
 
 ## Figure 2. RNA expression
@@ -173,7 +171,7 @@ grid.arrange(bashet.nrps, basmer.jgi.nrps, basmer.b9252.nrps)
 
 ## Figure 7: HGT counts
 
-```{r, fig.height=12}
+```{r, fig.height=12, eval=F}
 HGT.counts <- read.table("Fig7/HGT_counts.txt", sep = "\t", header = T)
 
 HGT.counts$Origin <- factor(HGT.counts$Origin, levels = c("a-proteobacteria","b-proteobacteria","d-proteobacteria","e-proteobacteria","g-proteobacteria","proteobacteria","firmicutes","actinobacteria","high GC Gram+","enterobacteria","planctomycetes","CFB group bacteria","GNS bacteria","verrucomicrobia","fusobacteria","cyanobacteria","chlamydias","mycoplasmas","aquificales","bacteria","euryarchaeotes","archaea"))
@@ -202,7 +200,7 @@ ggbarplot(data = side.meas, x = "Label", y="Area", fill="Label", add = "mean_se"
 
 # Supplementary figures
 
-> Sup. Figs 2 and 11 were constructed by hand
+> Sup. Figs 2, 3 and 12 were constructed by hand
 
 ## Sup. Figure 1: NRPS tree
 
@@ -254,10 +252,10 @@ ggtree(zygo_fort, size=0.3) %<+% fungi.all + geom_tiplab(size=1, aes(color=Phylu
 
 Figure was finalized by hand in Adobe Illustrator 2020 to color the missing tip labels, improve legibility and legend, and extend root.
 
-## Sup. Figure 3: PKS tree
+## Sup. Figure 4: PKS tree
 
 ```{r, fig.height=12}
-zygo_tree <- read.tree("SF3/PKS.tre")
+zygo_tree <- read.tree("SF4/PKS.tre")
 
 # Assigning names
 alin.names.org <- data.frame(names=zygo_tree$tip.label, stringsAsFactors = F)
@@ -299,10 +297,10 @@ ggtree(zygo_fort, size=0.3) %<+% fungi.all + geom_tiplab(size=1, aes(color=Phylu
 
 Figure was finalized by hand in Adobe Illustrator 2020 to color the missing tip labels, improve legibility and legend,and extend root.
 
-## Sup. Figure 4: Fungal PKS
+## Sup. Figure 5: Fungal PKS
 
 ```{r, fig.height=12}
-dom.df.m <- readRDS("SF4/PKS_Fungi.Rds")
+dom.df.m <- readRDS("SF5/PKS_Fungi.Rds")
 
 # Plot
 ggplot(dom.df.m, aes(x=variable, fill=value, y=AA)) +
@@ -315,10 +313,10 @@ ggplot(dom.df.m, aes(x=variable, fill=value, y=AA)) +
 ```
 
 
-## Sup. Figure 5: Zygo PKS
+## Sup. Figure 6: Zygo PKS
 
 ```{r, fig.height=12}
-dom.df <- read.table("SF5/PKS_counts.txt", sep = "\t", header = T, comment.char = '')
+dom.df <- read.table("SF6/PKS_counts.txt", sep = "\t", header = T, comment.char = '')
 
 # Plot
 dom.df.m <- melt(dom.df)
@@ -332,10 +330,10 @@ ggplot(dom.df.m, aes(x=variable, fill=value, y=AA)) +
   scale_fill_viridis_c(begin = 0.8, end = 0.8, na.value = "grey90")
 ```
 
-## Sup. Figure 6: TC tree
+## Sup. Figure 7: TC tree
 
 ```{r, fig.height=12}
-zygo_tree <- read.tree("SF6/TC.tree")
+zygo_tree <- read.tree("SF7/TC.tree")
 
 # Assigning names
 alin.names.org <- data.frame(names=zygo_tree$tip.label, stringsAsFactors = F)
@@ -377,14 +375,14 @@ ggtree(zygo_fort, size=0.3) %<+% fungi.all + geom_tiplab(size=1, aes(color=Phylu
 
 Figure was finalized by hand in Adobe Illustrator 2020 to color the missing tip labels, improve legibility and legend,and extend root.
 
-## Sup. Figure 7: HGT assay
+## Sup. Figure 8: HGT assay
 
 - Negative:
 
 ```{r, fig.height=12}
-jcf7180000803233 <- readRDS(file = "SF7/jcf7180000803233_HGTplot.Rds")
-chom.sub.all <- readRDS(file = "SF7/jcf7180000803233_Zscores.Rds")
-GFF.chrom <- readRDS(file = "SF7/GFF_chrom.jcf7180000803233.Rds")
+jcf7180000803233 <- readRDS(file = "SF8/jcf7180000803233_HGTplot.Rds")
+chom.sub.all <- readRDS(file = "SF8/jcf7180000803233_Zscores.Rds")
+GFF.chrom <- readRDS(file = "SF8/GFF_chrom.jcf7180000803233.Rds")
 
 # Coverage plot
 cov.plot <-ggplot(data = jcf7180000803233, aes(x=Pos, y=Cov)) + 
@@ -409,9 +407,9 @@ ggarrange(cov.plot, zscore.plot ,nrow = 2, labels = c("Coverage", "Zscore"))
 - Positive
 
 ```{r, fig.height=12}
-jcf7180000797043 <- readRDS(file = "SF7/jcf7180000797043_HGTplot.Rds")
-chom.sub.all <- readRDS(file = "SF7/jcf7180000797043_Zscores.Rds")
-GFF.chrom <- readRDS(file = "SF7/GFF_chrom.jcf7180000797043.Rds")
+jcf7180000797043 <- readRDS(file = "SF8/jcf7180000797043_HGTplot.Rds")
+chom.sub.all <- readRDS(file = "SF8/jcf7180000797043_Zscores.Rds")
+GFF.chrom <- readRDS(file = "SF8/GFF_chrom.jcf7180000797043.Rds")
 
 # Coverage plot
 cov.plot <-ggplot(data = jcf7180000797043, aes(x=Pos, y=Cov)) + 
@@ -435,10 +433,10 @@ ggarrange(cov.plot, zscore.plot ,nrow = 2, labels = c("Coverage", "Zscore"))
 
 Figure was finalized by hand in Adobe Illustrator 2020 
 
-## Sup. Figures 8: Intron Number
+## Sup. Figures 9: Intron Number
 
 ```{r, fig.height=12}
-intron.df <- readRDS("SF8/intron_number.Rds")
+intron.df <- readRDS("SF9/intron_number.Rds")
 
 # Plot
 ggviolin(intron.df, x="origin.x",y="num_introns", fill="origin.x", add = "boxplot", add.params = list(fill = "white"), draw_quantiles = T) + 
@@ -447,10 +445,10 @@ ggviolin(intron.df, x="origin.x",y="num_introns", fill="origin.x", add = "boxplo
   ylab("Number of introns")
 ```
 
-## Sup. Figure 9: Pentamers (Local)
+## Sup. Figure 10: Pentamers (Local)
 
 ```{r, fig.height=12}
-pca.penta <- readRDS(file = "SF9/pentameres_simple.Rds")
+pca.penta <- readRDS(file = "SF10/pentameres_simple.Rds")
 pca.penta.bg <- pca.penta[,c(1:3)]
 
 # Plot
@@ -466,10 +464,10 @@ penta.p
 ```
 
 
-## Sup. Figure 10. Codon Usage
+## Sup. Figure 11. Codon Usage
 
 ```{r, fig.height=12}
-pca.df <- readRDS(file = "SF10/codon_usage_simple.Rds")
+pca.df <- readRDS(file = "SF11/codon_usage_simple.Rds")
 pca.df.bg <- pca.df[,c(1:3)]
 
 # Plot
@@ -484,3 +482,6 @@ codon.p <- ggplot(pca.df, aes(x=PC1, y=PC2, color=label)) +
 codon.p
 ```
 
+## Revision folder:
+
+The revision folder includes the process of review suggested by G3. The only change in the data analysis was to determine the number of HGT candidate genes that are in scaffolds with no fungal genes. The process and subsequent results are found in the `HGT_Revision.Rmd` file

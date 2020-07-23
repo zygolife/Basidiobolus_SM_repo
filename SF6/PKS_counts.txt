@@ -1,0 +1,115 @@
+file	Species	Order	Phylum	AA	PKS_AT	PKS_KR	PKS_KS	PKS_DH	PKS_PP	source
+Absrep1	Absidia repens NRRL 1336 v1.0	Mucoromycotina	Mucoromycota	jgi|Absrep1|448669|estExt_Genemark1.C_6_t10153	1	NA	1	NA	NA	JGI
+Bacci1	Backusella circina FSU 941 v1.0	Mucoromycotina	Mucoromycota	jgi|Bacci1|315358|MIX15630_62_23	1	NA	1	NA	NA	JGI
+Bacci1	Backusella circina FSU 941 v1.0	Mucoromycotina	Mucoromycota	jgi|Bacci1|207987|estExt_Genewise1.C_80113	1	NA	1	NA	NA	JGI
+Basme2finSC	Basidiobolus meristosporus JGI	Entomophthoromycotina	Zoopagomycota	jgi|Basme2finSC|146993|gw1.42.32.1	1	NA	1	NA	1	AntiSMASH
+Basme2finSC	Basidiobolus meristosporus JGI	Entomophthoromycotina	Zoopagomycota	jgi|Basme2finSC|311577|fgenesh1_kg.41_#_27_#_Locus1509v1rpkm123.60	1	NA	1	NA	NA	AntiSMASH
+Basme2finSC	Basidiobolus meristosporus JGI	Entomophthoromycotina	Zoopagomycota	jgi|Blatri1|451349|estExt_Genemark1.C_1390013	1	NA	1	NA	NA	AntiSMASH
+Chlpad1	Absidia padenii NRRL 2977 v1.0	Mucoromycotina	Mucoromycota	jgi|Chlpad1|474985|gm1.10892_g	1	NA	1	NA	NA	JGI
+Cirumb1	Circinella umbellata NRRL1351 v1.0	Mucoromycotina	Mucoromycota	jgi|Cirumb1|575955|gm1.13129_g	1	NA	1	NA	NA	JGI
+Coemoj1	Coemansia mojavensis RSA 71 v1.0	Mucoromycotina	Mucoromycota	jgi|Coemoj1|521378|MIX2514_694_10	1	NA	1	NA	NA	JGI
+Coemoj1	Coemansia mojavensis RSA 71 v1.0	Mucoromycotina	Mucoromycota	jgi|Coemoj1|481414|estExt_Genewise1.C_110112	1	NA	1	NA	NA	JGI
+Coemoj1	Coemansia mojavensis RSA 71 v1.0	Mucoromycotina	Mucoromycota	jgi|Coemoj1|365482|CE365481_18166	1	NA	1	NA	NA	JGI
+Coemoj1	Coemansia mojavensis RSA 71 v1.0	Mucoromycotina	Mucoromycota	jgi|Coemoj1|494983|fgenesh1_kg.2_#_554_#_TRINITY_DN1424_c0_g1_i1	NA	NA	1	NA	NA	JGI
+Coemoj1	Coemansia mojavensis RSA 71 v1.0	Mucoromycotina	Mucoromycota	jgi|Coemoj1|470808|e_gw1.8.201.1	1	NA	1	NA	NA	JGI
+Coemoj1	Coemansia mojavensis RSA 71 v1.0	Mucoromycotina	Mucoromycota	jgi|Coemoj1|539451|estExt_fgenesh1_pg.C_120184	1	NA	1	NA	NA	JGI
+Coemoj1	Coemansia mojavensis RSA 71 v1.0	Mucoromycotina	Mucoromycota	jgi|Coemoj1|474831|e_gw1.31.22.1	1	NA	1	NA	NA	JGI
+Coere1	Coemansia reversa NRRL 1564 v1.0	Kickxellomycotina	Zoopagomycota	jgi|Coere1|36747|e_gw1.1.227.1	1	NA	1	NA	NA	JGI
+Coere1	Coemansia reversa NRRL 1564 v1.0	Kickxellomycotina	Zoopagomycota	jgi|Coere1|47266|e_gw1.34.41.1	1	NA	1	NA	NA	JGI
+Coere1	Coemansia reversa NRRL 1564 v1.0	Kickxellomycotina	Zoopagomycota	jgi|Coere1|10860|gm1.5569_g	1	NA	1	NA	NA	JGI
+Coere1	Coemansia reversa NRRL 1564 v1.0	Kickxellomycotina	Zoopagomycota	jgi|Coere1|103271|estExt_fgenesh1_pm.C_270024	1	NA	1	NA	NA	JGI
+Coere1	Coemansia reversa NRRL 1564 v1.0	Kickxellomycotina	Zoopagomycota	jgi|Coere1|45909|e_gw1.27.23.1	1	NA	1	NA	NA	JGI
+Coere1	Coemansia reversa NRRL 1564 v1.0	Kickxellomycotina	Zoopagomycota	jgi|Coere1|67958|estExt_Genewise1.C_930009	1	NA	1	NA	NA	JGI
+Coespi1	Coemansia spiralis RSA 1278 v1.0	Kickxellomycotina	Zoopagomycota	jgi|Coespi1|250152|gm1.856_g	1	NA	1	NA	NA	JGI
+Coespi1	Coemansia spiralis RSA 1278 v1.0	Kickxellomycotina	Zoopagomycota	jgi|Coespi1|19903|CE19902_1923	1	NA	1	NA	NA	JGI
+Coespi1	Coemansia spiralis RSA 1278 v1.0	Kickxellomycotina	Zoopagomycota	jgi|Coespi1|250343|gm1.1047_g	1	NA	1	NA	NA	JGI
+Coespi1	Coemansia spiralis RSA 1278 v1.0	Kickxellomycotina	Zoopagomycota	jgi|Coespi1|206379|estExt_Genewise1.C_170017	1	NA	1	NA	NA	JGI
+Coespi1	Coemansia spiralis RSA 1278 v1.0	Kickxellomycotina	Zoopagomycota	jgi|Coespi1|263696|estExt_Genemark1.C_100195	1	NA	1	NA	NA	JGI
+Coespi1	Coemansia spiralis RSA 1278 v1.0	Kickxellomycotina	Zoopagomycota	jgi|Coespi1|202018|estExt_Genewise1.C_7_t10492	1	NA	1	NA	NA	JGI
+Coespi1	Coemansia spiralis RSA 1278 v1.0	Kickxellomycotina	Zoopagomycota	jgi|Coespi1|187753|e_gw1.3.418.1	1	NA	1	NA	NA	JGI
+Coespi1	Coemansia spiralis RSA 1278 v1.0	Kickxellomycotina	Zoopagomycota	jgi|Coespi1|198629|estExt_Genewise1.C_3_t10103	1	NA	1	NA	NA	JGI
+Coespi1	Coemansia spiralis RSA 1278 v1.0	Kickxellomycotina	Zoopagomycota	jgi|Coespi1|262181|estExt_Genemark1.C_60139	1	NA	1	NA	NA	JGI
+Coespi1	Coemansia spiralis RSA 1278 v1.0	Kickxellomycotina	Zoopagomycota	jgi|Coespi1|213867|estExt_Genewise1Plus.C_100068	1	NA	1	NA	NA	JGI
+Coespi1	Coemansia spiralis RSA 1278 v1.0	Kickxellomycotina	Zoopagomycota	jgi|Coespi1|249391|gm1.95_g	1	NA	1	NA	NA	JGI
+Cokrec1	Cokeromyces recurvatus NRRL 2243 v1.0	Mucoromycotina	Mucoromycota	jgi|Cokrec1|556866|estExt_Genemark1.C_1_t10124	1	NA	1	NA	NA	JGI
+Cokrec1	Cokeromyces recurvatus NRRL 2243 v1.0	Mucoromycotina	Mucoromycota	jgi|Cokrec1|550353|gm1.3191_g	1	NA	1	NA	NA	JGI
+Conth1	Conidiobolus thromboides FSU 785 v1.0	Entomophthoromycotina	Zoopagomycota	jgi|Conth1|307023|estExt_Genewise1.C_1540017	1	NA	1	NA	NA	JGI
+Cunech1	Cunninghamella echinulata NRRL 1382 v1.0	Mucoromycotina	Mucoromycota	jgi|Cunech1|250215|estExt_Genemark1.C_5180003	1	NA	1	NA	NA	JGI
+Dicele1	Dichotomocladium elegans RSA 919- v1.0	Mucoromycotina	Mucoromycota	jgi|Dicele1|2029171|gm1.7351_g	1	NA	1	NA	NA	JGI
+Fenlin1	Fennellomyces sp. T-0311 v1.0	Mucoromycotina	Mucoromycota	jgi|Fenlin1|666674|gm1.4780_g	1	NA	1	NA	NA	JGI
+Gilper1	Gilbertella persicaria var. persicaria CBS 190.32-T v1.0	Mucoromycotina	Mucoromycota	jgi|Gilper1|477080|e_gw1.44.207.1	1	NA	1	NA	NA	JGI
+Gonbut1	Gongronella butleri v1.0	Mucoromycotina	Mucoromycota	jgi|Gonbut1|364589|estExt_Genemark1.C_50161	1	NA	1	NA	NA	JGI
+Hesve2finisherSC	Hesseltinella vesiculosa NRRL3301 v2.0	Mucoromycotina	Mucoromycota	jgi|Hesve2finisherSC|1332901|fgenesh1_kg.5_#_49_#_Locus1500v1rpkm128.62	1	NA	1	NA	NA	JGI
+Kicala1	Kickxella alabastrina RSA 675 v1.0	Kickxellomycotina	Zoopagomycota	jgi|Kicala1|185238|fgenesh1_kg.17_#_350_#_TRINITY_DN1405_c0_g3_i1	1	NA	1	NA	NA	JGI
+Kicala1	Kickxella alabastrina RSA 675 v1.0	Kickxellomycotina	Zoopagomycota	jgi|Kicala1|181839|fgenesh1_kg.10_#_86_#_TRINITY_DN4809_c1_g1_i1	1	NA	1	NA	NA	JGI
+Kircor1	Mucor cordense RSA 1222 v1.0	Mucoromycotina	Mucoromycota	jgi|Kircor1|408959|gm1.10342_g	1	NA	1	NA	NA	JGI
+Kircor1	Mucor cordense RSA 1222 v1.0	Mucoromycotina	Mucoromycota	jgi|Kircor1|441089|MIX4055_518_33	1	NA	1	NA	NA	JGI
+Liccor1	Lichtheimia corymbifera JMRC:FSU:9682	Mucoromycotina	Mucoromycota	jgi|Liccor1|10208|LCOR_09269.1	1	NA	1	NA	NA	JGI
+Lichy1	Lichtheimia hyalospora v1.0	Mucoromycotina	Mucoromycota	jgi|Lichy1|203878|estExt_Genemark1.C_120082	1	NA	1	NA	NA	JGI
+Linpe1	Linderina pennispora ATCC 12442 v1.0	Kickxellomycotina	Zoopagomycota	jgi|Linpe1|294103|gm1.4798_g	1	NA	1	NA	NA	JGI
+Linpe1	Linderina pennispora ATCC 12442 v1.0	Kickxellomycotina	Zoopagomycota	jgi|Linpe1|299083|MIX536_14494_79	1	NA	1	NA	NA	JGI
+Linpe1	Linderina pennispora ATCC 12442 v1.0	Kickxellomycotina	Zoopagomycota	jgi|Linpe1|322164|estExt_Genemark1.C_50255	1	NA	1	NA	NA	JGI
+Linpe1	Linderina pennispora ATCC 12442 v1.0	Kickxellomycotina	Zoopagomycota	jgi|Linpe1|287208|estExt_fgenesh1_pg.C_360002	1	NA	1	NA	NA	JGI
+Linpe1	Linderina pennispora ATCC 12442 v1.0	Kickxellomycotina	Zoopagomycota	jgi|Linpe1|286290|estExt_fgenesh1_pg.C_150145	1	NA	1	NA	NA	JGI
+Linpe1	Linderina pennispora ATCC 12442 v1.0	Kickxellomycotina	Zoopagomycota	jgi|Linpe1|287500|estExt_fgenesh1_pg.C_480004	1	NA	1	NA	NA	JGI
+Linpe1	Linderina pennispora ATCC 12442 v1.0	Kickxellomycotina	Zoopagomycota	jgi|Linpe1|286800|estExt_fgenesh1_pg.C_220001	1	NA	1	NA	NA	JGI
+Linpe1	Linderina pennispora ATCC 12442 v1.0	Kickxellomycotina	Zoopagomycota	jgi|Linpe1|260720|fgenesh1_pg.20_#_66	1	NA	1	NA	NA	JGI
+Linpe1	Linderina pennispora ATCC 12442 v1.0	Kickxellomycotina	Zoopagomycota	jgi|Linpe1|265360|fgenesh1_kg.2_#_534_#_Locus4571v1rpkm24.05	1	NA	1	NA	NA	JGI
+Linpe1	Linderina pennispora ATCC 12442 v1.0	Kickxellomycotina	Zoopagomycota	jgi|Linpe1|231449|estExt_Genewise1.C_1_t10271	1	NA	1	NA	NA	JGI
+Linpe1	Linderina pennispora ATCC 12442 v1.0	Kickxellomycotina	Zoopagomycota	jgi|Linpe1|297889|gm1.8584_g	1	NA	1	NA	NA	JGI
+Linpe1	Linderina pennispora ATCC 12442 v1.0	Kickxellomycotina	Zoopagomycota	jgi|Linpe1|318839|MIX20292_382_7	1	NA	1	NA	NA	JGI
+Linpe1	Linderina pennispora ATCC 12442 v1.0	Kickxellomycotina	Zoopagomycota	jgi|Linpe1|316851|MIX18304_28759_88	1	NA	1	NA	NA	JGI
+Linpe1	Linderina pennispora ATCC 12442 v1.0	Kickxellomycotina	Zoopagomycota	jgi|Linpe1|227343|e_gw1.22.45.1	1	NA	1	NA	NA	JGI
+Linpe1	Linderina pennispora ATCC 12442 v1.0	Kickxellomycotina	Zoopagomycota	jgi|Linpe1|323941|estExt_Genemark1.C_100264	NA	NA	1	NA	NA	JGI
+Lobtra1	Lobosporangium transversale NRRL 3116 v1.0	Morteriellomycotina	Mucoromycota	jgi|Lobtra1|418365|estExt_Genemark1.C_20197	1	NA	1	NA	NA	JGI
+Marpt1	Martensiomyces pterosporus CBS 209.56 v1.0	Kickxellomycotina	Zoopagomycota	jgi|Marpt1|30255|CE30254_8254	1	NA	1	NA	NA	JGI
+Marpt1	Martensiomyces pterosporus CBS 209.56 v1.0	Kickxellomycotina	Zoopagomycota	jgi|Marpt1|320354|MIX1289_1534_42	1	NA	1	NA	NA	JGI
+Marpt1	Martensiomyces pterosporus CBS 209.56 v1.0	Kickxellomycotina	Zoopagomycota	jgi|Marpt1|321606|MIX2541_636_43	1	NA	1	NA	NA	JGI
+Marpt1	Martensiomyces pterosporus CBS 209.56 v1.0	Kickxellomycotina	Zoopagomycota	jgi|Marpt1|336614|estExt_fgenesh1_pg.C_10001	1	NA	1	NA	NA	JGI
+Marpt1	Martensiomyces pterosporus CBS 209.56 v1.0	Kickxellomycotina	Zoopagomycota	jgi|Marpt1|255713|e_gw1.14.159.1	1	NA	1	NA	NA	JGI
+Mormul1	Mortierella multidivaricata RSA 2152 T v1.0	Morteriellomycotina	Mucoromycota	jgi|Mormul1|501643|gm1.3707_g	1	NA	1	NA	NA	JGI
+Morve1	Mortierella verticillata NRRL 6337	Morteriellomycotina	Mucoromycota	jgi|Morve1|9736|MVEG_06358T0	1	NA	1	NA	NA	JGI
+Mucci2	Mucor circinelloides CBS277.49 v2.0	Mucoromycotina	Mucoromycota	jgi|Mucci2|115269|Genemark1.11032_g	NA	NA	1	NA	NA	JGI
+Mucci2	Mucor circinelloides CBS277.49 v2.0	Mucoromycotina	Mucoromycota	jgi|Mucci2|72770|Mucci1.fgeneshMC_pm.3_#_69	1	NA	1	NA	NA	JGI
+Mucci2	Mucor circinelloides CBS277.49 v2.0	Mucoromycotina	Mucoromycota	jgi|Mucci2|183529|estExt_Genemark1.C_030639	1	NA	1	NA	NA	JGI
+Mucci2	Mucor circinelloides CBS277.49 v2.0	Mucoromycotina	Mucoromycota	jgi|Mucci2|183529|estExt_Genemark1.C_030639	1	NA	1	NA	NA	JGI
+Mucci2	Mucor circinelloides CBS277.49 v2.0	Mucoromycotina	Mucoromycota	jgi|Mucci2|72770|Mucci1.fgeneshMC_pm.3_#_69	1	NA	1	NA	NA	JGI
+Mucci2	Mucor circinelloides CBS277.49 v2.0	Mucoromycotina	Mucoromycota	jgi|Mucci2|115269|Genemark1.11032_g	NA	NA	1	NA	NA	JGI
+Mycafr1	Mycotypha africana NRRL 2978 v1.0	Mucoromycotina	Mucoromycota	jgi|Mycafr1|910341|gm1.1742_g	1	NA	1	NA	NA	JGI
+Mycafr1	Mycotypha africana NRRL 2978 v1.0	Mucoromycotina	Mucoromycota	jgi|Mycafr1|960422|estExt_Genewise1.C_8_t10203	1	NA	1	NA	NA	JGI
+N161	Basidiobolus meristosporus B9252	Entomophthoromycotina	Zoopagomycota	N161.mRNA.10391.1_PKS_C_24	1	NA	1	1	NA	AntiSMASH
+N161	Basidiobolus meristosporus B9252	Entomophthoromycotina	Zoopagomycota	N161.mRNA.6146.1_PKS_C_14	1	1	1	1	1	AntiSMASH
+N168	Basidiobolus heterosporus	Entomophthoromycotina	Zoopagomycota	jgi|Basme2finSC|237744|e_gw1.562.10.1	1	NA	1	1	NA	AntiSMASH
+Parpar1	Parasitella parasitica v1.0	Mucoromycotina	Mucoromycota	jgi|Parpar1|442354|estExt_Genemark1.C_300016	1	NA	1	NA	NA	JGI
+Parpar1	Parasitella parasitica v1.0	Mucoromycotina	Mucoromycota	jgi|Parpar1|486736|estExt_fgenesh1_pg.C_1660011	1	NA	1	NA	NA	JGI
+Phaart1	Phascolomyces articulosus v1.0	Mucoromycotina	Mucoromycota	jgi|Phaart1|558207|gm1.4358_g	1	NA	1	NA	NA	JGI
+Phybl2	Phycomyces blakesleeanus NRRL1555 v2.0	Mucoromycotina	Mucoromycota	jgi|Phybl2|111203|e_gw1.8.473.1	NA	NA	1	NA	NA	JGI
+Phybl2	Phycomyces blakesleeanus NRRL1555 v2.0	Mucoromycotina	Mucoromycota	jgi|Phybl2|111203|e_gw1.8.473.1	NA	NA	1	NA	NA	JGI
+Phybl2	Phycomyces blakesleeanus NRRL1555 v2.0	Mucoromycotina	Mucoromycota	jgi|Phybl2|182689|estExt_Genemark1.C_200193	1	NA	1	NA	NA	JGI
+Phybl2	Phycomyces blakesleeanus NRRL1555 v2.0	Mucoromycotina	Mucoromycota	jgi|Phybl2|182689|estExt_Genemark1.C_200193	1	NA	1	NA	NA	JGI
+Pilano1	Pilaira anomala RSA1997 v1.0	Mucoromycotina	Mucoromycota	jgi|Pilano1|446390|gm1.8046_g	1	NA	1	NA	NA	JGI
+Pilumb1	Pilobolus umbonatus NRRL 6349 v1.0	Mucoromycotina	Mucoromycota	jgi|Pilumb1|847126|gm1.1671_g	1	NA	1	NA	NA	JGI
+Radspe1	Radiomyces spectabilis NRRL 2753 v1.0	Mucoromycotina	Mucoromycota	jgi|Radspe1|609974|gm1.920_g	1	NA	1	NA	NA	JGI
+Rambr1	Ramicandelaber brevisporus CBS 109374 v1.0	Kickxellomycotina	Zoopagomycota	jgi|Rambr1|161542|fgenesh1_kg.71_#_20_#_Locus2060v1rpkm73.59	1	NA	1	NA	NA	JGI
+Rhich1	Rhizopus microsporus var. chinensis CCTCC M201021	Mucoromycotina	Mucoromycota	jgi|Rhich1|13859|A13908	1	NA	1	NA	NA	JGI
+Rhimi_ATCC11559_1	Rhizopus microsporus ATCC11559 v1.0	Mucoromycotina	Mucoromycota	jgi|Rhimi_ATCC11559_1|264774|gm1.5512_g	1	NA	1	NA	NA	JGI
+Rhimi_ATCC52814_1	Rhizopus microsporus var. microsporus ATCC52814 v1.0	Mucoromycotina	Mucoromycota	jgi|Rhimi_ATCC52814_1|122409|CE122408_35219	1	NA	1	NA	NA	JGI
+Rhimi1_1	Rhizopus microsporus var. microsporus ATCC52813 v1.0	Mucoromycotina	Mucoromycota	jgi|Rhimi1_1|293980|estExt_Genemark1.C_150190	1	NA	1	NA	NA	JGI
+Rhior3	Rhizopus delemar 99-880 from Broad	Mucoromycotina	Mucoromycota	jgi|Rhior3|14051|RO3G_05888	NA	NA	1	NA	NA	JGI
+Rhior3	Rhizopus delemar 99-880 from Broad	Mucoromycotina	Mucoromycota	jgi|Rhior3|2378|RO3G_16170	1	NA	1	NA	NA	JGI
+Rhior3	Rhizopus delemar 99-880 from Broad	Mucoromycotina	Mucoromycota	jgi|Rhior3|14051|RO3G_05888	NA	NA	1	NA	NA	JGI
+Rhior3	Rhizopus delemar 99-880 from Broad	Mucoromycotina	Mucoromycota	jgi|Rhior3|2378|RO3G_16170	1	NA	1	NA	NA	JGI
+Sakvas1	Saksenaea vasiformis B4078	Mucoromycotina	Mucoromycota	jgi|Sakvas1|2722|SVAS_02614-R0	1	NA	1	NA	NA	JGI
+SmiculW2_1	Smittium culicis ID-206-W2	Kickxellomycotina	Zoopagomycota	jgi|SmiculW2_1|6919|AYI69_g8743T0	1	NA	1	NA	NA	JGI
+SmiculW2_1	Smittium culicis ID-206-W2	Kickxellomycotina	Zoopagomycota	jgi|SmiculW2_1|9994|AYI69_g10983T0	1	NA	1	NA	NA	JGI
+SmicuMNP_2	Smittium culicis GSMNP	Kickxellomycotina	Zoopagomycota	jgi|SmicuMNP_2|10924|AYI70_g12389T0	1	NA	1	NA	NA	JGI
+SmicuMNP_2	Smittium culicis GSMNP	Kickxellomycotina	Zoopagomycota	jgi|SmicuMNP_2|58|AYI70_g3496T0	1	NA	1	NA	NA	JGI
+Smimuc2	Smittium mucronatum ALG-7-W6	Kickxellomycotina	Zoopagomycota	jgi|Smimuc2|1725|AYI68_g4020T0	1	NA	1	NA	NA	JGI
+Smimuc2	Smittium mucronatum ALG-7-W6	Kickxellomycotina	Zoopagomycota	jgi|Smimuc2|2964|AYI68_g5017T0	1	NA	1	NA	NA	JGI
+Smimuc2	Smittium mucronatum ALG-7-W6	Kickxellomycotina	Zoopagomycota	jgi|Smimuc2|4805|AYI68_g1254T0	1	NA	1	NA	NA	JGI
+Spifus1	Spinellus fusiger NRRL 22323 v1.0	Mucoromycotina	Mucoromycota	jgi|Spifus1|1996619|estExt_Genemark1.C_380064	1	NA	1	NA	NA	JGI
+Spoumb1	Sporodiniella umbellata MES 1446 v1.0	Mucoromycotina	Mucoromycota	jgi|Spoumb1|560469|gm1.8584_g	1	NA	1	NA	NA	JGI
+Synrac1	Syncephalastrum racemosum:13706	Zoopagomycotina	Zoopagomycota	jgi|Synrac1|515153|gm1.5817_g	1	NA	1	NA	NA	JGI
+Synrac1	Syncephalastrum racemosum:13706	Zoopagomycotina	Zoopagomycota	jgi|Synrac1|4639|CE4638_4595	NA	NA	1	NA	NA	JGI
+Umbra1	Umbelopsis ramanniana AG # v1.0	Mucoromycotina	Mucoromycota	jgi|Umbra1|231189|fgenesh1_kg.13_#_711_#_combest_scaffold_13_19057	NA	NA	1	NA	NA	JGI
+Zyghet1	Mucor heterogamus NRRL 1489 v1.0	Mucoromycotina	Mucoromycota	jgi|Zyghet1|584126|estExt_Genemark1.C_250035	1	NA	1	NA	NA	JGI

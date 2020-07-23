@@ -14,7 +14,7 @@ MorGBAus27b_1,Mortierella sp. GBAus27b,Morteriellomycotina,Mucoromycota,44.97,13
 Absrep1,Absidia repens NRRL 1336 v1.0,Mucoromycotina,Mucoromycota,47.422896,8575,14,0,1,1,1,1,10
 Bacci1,Backusella circina FSU 941 v1.0,Mucoromycotina,Mucoromycota,48.648288,9250,16,0,1,5,2,1,7
 Blatri1,Blakeslea trispora NRRL 2456 v1.0,Mucoromycotina,Mucoromycota,37.513922,6062,12,0,1,3,1,1,6
-Chlpad1,Absidia padenii NRRL 2977 v1.0,Mucoromycotina,Mucoromycota,34.32823,7616,9,0,0,0,0,0,9
+Chlpad1,Absidia padenii NRRL 2977 v1.0,Mucoromycotina,Mucoromycota,34.32823,7616,11,0,1,1,0,0,9
 Cirumb1,Circinella umbellata NRRL1351 v1.0,Mucoromycotina,Mucoromycota,51.2701,7773,12,0,0,4,1,1,6
 Cokrec1,Cokeromyces recurvatus NRRL 2243 v1.0,Mucoromycotina,Mucoromycota,28.120762,5928,13,0,1,2,2,1,7
 Cunech1,Cunninghamella echinulata NRRL 1382 v1.0,Mucoromycotina,Mucoromycota,29.00241,5915,10,0,1,0,1,1,7
@@ -47,10 +47,10 @@ Phybl2,Phycomyces blakesleeanus NRRL1555 v2.0,Mucoromycotina,Mucoromycota,53.9,1
 Umbra1,Umbelopsis ramanniana AG # v1.0,Mucoromycotina,Mucoromycota,23.08,9931,12,0,1,4,0,1,6
 Coemoj1,Coemansia mojavensis RSA 71 v1.0,Mucoromycotina,Mucoromycota,14.29,6859,11,0,1,0,6,1,3
 Synrac1,Syncephalastrum racemosum:13706,Mucoromycotina,Mucoromycota,30.75,11124,15,0,0,7,1,1,6
-Basme2finSC,Basidiobolus meristosporus JGI,Entomophthoromycotina,Zoopagomycota,89.48906,16111,43,0,19,11,3,1,10
+Basme2finSC,Basidiobolus meristosporus JGI,Entomophthoromycotina,Zoopagomycota,89.48906,16111,43,1,19,9,3,1,10
 Conco1,Conidiobolus coronatus NRRL28638 v1.0,Entomophthoromycotina,Zoopagomycota,39.903661,4790,13,0,1,7,0,3,2
 Conth1,Conidiobolus thromboides FSU 785 v1.0,Entomophthoromycotina,Zoopagomycota,24.635576,4266,8,0,0,4,1,1,2
-N161,Basidiobolus meristosporus B9252,Entomophthoromycotina,Zoopagomycota,103.9,13273,44,1,13,17,2,5,6
+N161,Basidiobolus meristosporus B9252,Entomophthoromycotina,Zoopagomycota,103.9,13273,40,0,13,14,2,5,6
 N168,Basidiobolus heterosporus,Entomophthoromycotina,Zoopagomycota,47.63,9331,23,0,10,8,1,0,4
 Coere1,Coemansia reversa NRRL 1564 v1.0,Kickxellomycotina,Zoopagomycota,21.838014,4069,11,0,1,0,6,2,2
 Coespi1,Coemansia spiralis RSA 1278 v1.0,Kickxellomycotina,Zoopagomycota,18.931979,4298,15,0,1,0,11,1,2
